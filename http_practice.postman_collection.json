@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "f479a2c2-e20b-45b5-b3ab-4e6778eddd53",
+		"name": "http_practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29470380"
+	},
+	"item": [
+		{
+			"name": "OK",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/ok",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"ok"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "badrequest400",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/badrequest_400",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"badrequest_400"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "badrequest405",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/badrequest_405",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"badrequest_405"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unauthorized",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/unauthorized",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"unauthorized"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notfound",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/notfound",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"notfound"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000/api/openweathermap",
+			"type": "string"
+		}
+	]
+}
