@@ -19,18 +19,6 @@ export class AppService {
     }
   }
 
-
-  async testss(){
-    try{
-      let response = await this.httpService.axiosRef.request({url: `https://bulk.openweathermap.org/snapshot/weather_zip_us.csv.gz?appid=${this.openWeatherMapApiKey}`, method: 'GET'});
-
-      return new ResponseDto(response.data, response.status, response.statusText);
-    }
-    catch(err){
-      return new ResponseDto(err, undefined, undefined);
-    }
-  }
-
   private get openWeatherMapApiKey(){
     return this.configService.get('API_KEY');
   }
