@@ -32,9 +32,4 @@ export class AppController {
   NotFound() : Promise<ResponseDto> {
     return this.appService.sendRequestToOpenWeatherMapApi('GET', new WeatherOptionsDto(59, 59, 'en', undefined, '2.6'));
   }
-
-  @Get('tomanyrequests')
-  async ToManyRequests() : Promise<ResponseDto> {
-    return this.appService.testss();
-  }
 }
